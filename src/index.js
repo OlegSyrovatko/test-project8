@@ -1,7 +1,7 @@
 import ApiContent from "./js/content-api";
 
 
-const apiKey = "edcdf24847596a8bc6f71c1052f5a8e5";
+const apiKey = "";
 
 // Get the user's current position
 if (navigator.geolocation) {
