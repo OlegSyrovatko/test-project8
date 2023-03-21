@@ -1,7 +1,7 @@
 import ApiContent from "./js/content-api";
 
 
-const apiKey = "";
+const apiKey = "edcdf24847596a8bc6f71c1052f5a8e5";
 
 // Get the user's current position
 if (navigator.geolocation) {
@@ -19,7 +19,7 @@ if (navigator.geolocation) {
         const temperature = Math.round(data.main.temp - 273.15); // Convert from Kelvin to Celsius and round to the nearest integer
         const description = data.weather[0].description;
 const iconCode = data.weather[0].icon;
-const iconUrl = `https://openweathermap.org/img/w/${iconCode}@2x.png?&alpha=1&background=FFFFFF`;
+const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png?&alpha=1&background=FFFFFF`;
 
 const iconImg = `<img src="${iconUrl}" alt="${description}">`;
 
