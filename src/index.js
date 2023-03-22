@@ -37,7 +37,7 @@ function fetchWeather(latitude, longitude, apiKey) {
 
       const description = data.weather[0].description;
       const iconCode = data.weather[0].icon;
-      const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png?&alpha=1&background=FFFFFF`;
+      const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
 
       const weekday = new Date().toLocaleString('en-US', { weekday: 'long' });
       const day = new Date().toLocaleString('en-US', { day: 'numeric' });

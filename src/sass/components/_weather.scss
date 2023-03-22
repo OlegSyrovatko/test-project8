@@ -5,21 +5,21 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 675px;
 
   @media screen and (min-width: 768px) {
-    width: 353px;
-    height: 675px;
+    // width: 353px;
     padding-top: 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 395px;
-    height: 675px;
+    // width: 395px;
     padding-top: 45px;
   }
 
   @media screen and (max-width: 767px) {
-    width: 288px;
+    // width: 288px;
     height: 469px;
     padding-top: 37px;
   }
@@ -95,15 +95,13 @@
   }
 
   &__time {
-
-
-    margin: 90px auto;
+    text-align: center;
+    margin-top: 90px;
     font-size: 36px;
     line-height: 42px;
-    padding: auto;
 
     @media screen and (max-width: 767px) {
-      margin: 40px auto;
+      margin-top: 40px;
       font-size: 28px;
       line-height: 33px;
     }
