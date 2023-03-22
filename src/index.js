@@ -1,6 +1,6 @@
 import ApiContent from "./js/content-api";
 
-const apiKey = "";
+const apiKey = "edcdf24847596a8bc6f71c1052f5a8e5";
 const latitudeDefault = 40.778793;
 const longitudeDefault = -73.966587;
 
@@ -37,9 +37,11 @@ function fetchWeather(latitude, longitude, apiKey) {
 
       const description = data.weather[0].description;
       const iconCode = data.weather[0].icon;
-      const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
 
-      const weekday = new Date().toLocaleString('en-US', { weekday: 'long' });
+      const iconUrl = `https://openweathermap.org/img/wn/04n@2x.png`;
+      
+
+      const weekday = new Date().toLocaleString('en-US', { weekday: 'short' });
       const day = new Date().toLocaleString('en-US', { day: 'numeric' });
       const month = new Date().toLocaleString('en-US', { month: 'short' });
       const year = new Date().toLocaleString('en-US', { year: 'numeric' });
