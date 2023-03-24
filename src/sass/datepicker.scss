@@ -1,33 +1,10 @@
 @use 'sass:math';
 
-$width: 250px;
+$width: 15.625em;
 $radius: $width * .016891;
 $transition: .3s;
 $font-size: $width * .056;
 $lightblue: lightblue;
-
-#date {
-  box-sizing: border-box;
-
-  position: absolute;
-
-  left: 0px;
-  top: 0px;
-
-
-}
-
-#datepicker {
-  $width: 168px;
-
-  @media screen and (max-width: 767px) {
-    $width: 151px;
-  }
-
-  border: 1px solid #111321;
-  border-radius: 20px;
-  height: 31px;
-}
 
 /*
   All a user has to do to change the calendar size is
@@ -48,7 +25,7 @@ $lightblue: lightblue;
   border-radius: $radius;
   overflow: hidden;
   background: white;
-  box-shadow: 0 ($width * .08) ($width * .08) ($width * -.06) rgba(0, 0, 0, .3);
+  box-shadow: 0 ($width * .08) ($width * .08) ($width * -.06) rgba(0,0,0,.3);
 
   * {
     box-sizing: border-box;
@@ -70,7 +47,7 @@ $lightblue: lightblue;
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0,0,0,.75);
   color: white;
   width: 100%;
   height: 100%;
@@ -86,8 +63,7 @@ $lightblue: lightblue;
     z-index: -1;
   }
 
-  .qs-overlay-year {
-    // Overlay year input element.
+  .qs-overlay-year { // Overlay year input element.
     border: none;
     background: transparent;
     border-bottom: 1px solid white;
@@ -120,7 +96,7 @@ $lightblue: lightblue;
     padding: .5em;
     margin: 0 auto auto;
     cursor: pointer;
-    background: rgba(128, 128, 128, .4);
+    background: rgba(128,128,128,.4);
 
     &.qs-disabled {
       color: gray;
@@ -144,8 +120,7 @@ $lightblue: lightblue;
     opacity: .5;
     transition: opacity math.div($transition, 2);
 
-    &.active,
-    &:hover {
+    &.active, &:hover {
       opacity: 1;
     }
   }
@@ -184,7 +159,7 @@ $lightblue: lightblue;
       border-left-color: black;
     }
 
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0,0,0,.1);
   }
 
   &:after {
@@ -215,7 +190,7 @@ $lightblue: lightblue;
 
   &:not(.qs-disabled-year-overlay) {
     cursor: pointer;
-
+    
     &:hover {
       border-bottom: 1px solid gray;
     }
