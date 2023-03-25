@@ -16,7 +16,7 @@ const fetchCalendar = function(){
 
             input.value = `${day.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${year}`;
 
-            const queryformat = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+            const queryformat = `${year}${month.toString().padStart(2, '0')}${day.toString().padStart(2, '0')}`;
             console.log(`data for your function ${queryformat}`);
             // call your function
             document.querySelector("#hidden-picker").value = queryformat;
